@@ -1,7 +1,13 @@
+import pytest
+
 
 @pytest.fixture
 def browser():
     print("Я выполняюсь перед тестом")
+
+    yield
+
+    print("Я выполняюсь после теста")
 
 @pytest.fixture
 def login_page(browser):
