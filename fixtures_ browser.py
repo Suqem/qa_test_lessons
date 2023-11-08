@@ -8,4 +8,4 @@ def browser_config():
     browser.config.window_height = 1080
     browser.config.browser_name = 'chrome'
     yield
-    browser.quit()
+    browser.quit( )
